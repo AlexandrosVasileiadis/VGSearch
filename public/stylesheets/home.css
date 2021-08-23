@@ -1,0 +1,163 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://images.unsplash.com/photo-1616801060191-6085bad82f95?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80) no-repeat center center fixed ;
+    background-size: cover;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+nav {
+    background: rgba(122,82,66,255);
+}
+
+.navbar-brand:focus{
+    outline: none;
+}
+
+#navButton {
+    border: none;
+    box-shadow: none;
+}
+
+footer {
+    background: rgba(122,82,66,255);
+}
+
+footer a {
+    color: black;
+}
+
+.row {
+    margin: auto;
+}
+
+.typer {
+    position: absolute;
+    margin: auto;
+    outline: none;
+    border: none;
+    background: crimson;
+    color: white;
+    text-shadow: 0 0 10px crimson;
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 crimson, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+}
+
+.typer:hover {
+    cursor: pointer;
+}
+
+.typer::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder;
+}
+
+.typer:focus {
+    width: 300px;
+    opacity: 1;
+    cursor: text;
+}
+
+.typer:focus~.search {
+    right: -250px;
+    background: #151515;
+    z-index: 6;
+}
+
+.typer:focus~.search::before {
+    top: 0;
+    left: 0;
+    width: 25px;
+}
+
+.typer:focus~.search::after {
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    border: none;
+    background: white;
+    border-radius: 0%;
+    transform: rotate(-45deg);
+}
+
+.search {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: crimson;
+    border-radius: 50%;
+    z-index: 4;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+    transition: all 1s;
+}
+
+.search:hover {
+    cursor: pointer;
+}
+
+
+/* for the line under the circle of the searchTool */
+.search::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 22px;
+    right: 0;
+    bottom: 0;
+    left: 22px;
+    width: 12px;
+    height: 2px;
+    background: white;
+    transform: rotate(45deg);
+    transition: all .5s;
+}
+
+/* for the circle of the searchTool */
+.search::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -5px;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all .5s;
+}
+
+#resultsSection {
+    margin-top: 450px;
+}
+
+#resultUl {
+    list-style-type: none;
+}
+
+#resultUl li a {
+    color: rgb(21, 255, 0);
+    text-decoration: none;
+}
+
+#resultUl li a:hover {
+    opacity: 0.5;
+}

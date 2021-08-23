@@ -1,0 +1,48 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+nav {
+    background: rgba(122,82,66,255);
+}
+
+.navbar-brand:focus{
+    outline: none;
+}
+
+#navButton {
+    border: none;
+    box-shadow: none;
+}
+
+footer {
+    background: rgba(122,82,66,255);
+}
+
+footer a {
+    color: black;
+}
+
+li a {
+    color: rgb(21, 255, 0);
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(21, 255, 0);
+    opacity: 0.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    box-shadow: none;
+}

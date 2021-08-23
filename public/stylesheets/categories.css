@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://images.unsplash.com/photo-1591196702597-062a87208fed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80) no-repeat center center fixed ;
+    background-size: cover;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+nav {
+    background: rgba(122,82,66,255);
+}
+
+.navbar-brand:focus{
+    outline: none;
+}
+
+#navButton {
+    border: none;
+    box-shadow: none;
+}
+
+footer {
+    background: rgba(122,82,66,255);
+}
+
+footer a {
+    color: black;
+}
+
+#categories li a {
+    color: rgb(21, 255, 0);
+    text-decoration: none;
+}
+
+#categories li a:hover {
+    opacity: 0.5;
+}
+
+#categories {
+    list-style-type: none;
+}
